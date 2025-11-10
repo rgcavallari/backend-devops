@@ -40,7 +40,7 @@ def test_login_success(client):
 
 def test_login_fail(client):
     resp = login(client, username="x", password="y")
-    assert b"Usuario ou senha invalidos" in resp.data or \
+    assert b"Usuario ou senha inv\xc3\xa1lidos" in resp.data or \
            b"Usuario ou senha" in resp.data
 
 
@@ -73,7 +73,7 @@ def test_create_student_and_grade(client):
 
     # Lança nota
     resp = client.post(
-        "/notas",
+        "/grades",
         data={
             "id_estudante": id_estudante,
             "disciplina": "Matemática",
