@@ -1,0 +1,73 @@
+# --- PYTHON ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db-journal
+*.sqlite3
+*.log
+*.pot
+*.mo
+
+# --- AMBIENTE LOCAL ---
+.env
+.venv/
+venv/
+env/
+ENV/
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.bak
+
+# --- BASE DE DADOS LOCAL ---
+# Evita subir o banco local (os dados são temporários e variam de máquina pra máquina)
+school.db
+
+# --- TESTES ---
+.coverage
+htmlcov/
+.pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+
+# --- DOCKER ---
+# Ignora arquivos temporários de build (se forem criados)
+*.tar
+*.img
+*.pid
+*.sock
+
+# --- SISTEMAS OPERACIONAIS ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- VIRTUAL ENV FILES ---
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- PYCHARM / IDEs ---
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- FLASK ---
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# --- CACHE DE COMPILAÇÃO ---
+__pycache__/
+*.py[cod]
+*$py.class
